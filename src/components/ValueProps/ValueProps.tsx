@@ -12,7 +12,7 @@ const ValueProps: React.FC = () => {
     },
     {
       title: 'Community-Proven',
-      description: 'Barry AI processes vehicle diagnostics with 95% accuracy in production. AI Query Hub serves tiered SaaS customers. AIBoostCampaign orchestrates 50+ specialized agents.'
+      description: 'Barry AI processes vehicle diagnostics with 95% accuracy in production. Personal AI Manager orchestrates 6 specialized agents. Pattern Scribe AI serves enterprise fashion manufacturers.'
     }
   ];
 

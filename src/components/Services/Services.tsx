@@ -10,7 +10,7 @@ const Services: React.FC = () => {
         'Two-Pass RAG systems with 95% accuracy',
         'Real-time processing (Whisper + FFmpeg pipelines)'
       ],
-      example: 'News Spark Editor, Barry AI'
+      example: 'News Spark Editor, Pattern Scribe AI'
     },
     {
       title: 'AI Strategy & Architecture',
@@ -20,7 +20,7 @@ const Services: React.FC = () => {
         'Multi-model AI orchestration systems',
         'Multi-platform integration strategies'
       ],
-      example: 'AIBoostCampaign, Barry AI'
+      example: 'Personal AI Manager, AIBoostCampaign'
     },
     {
       title: 'Product Development',

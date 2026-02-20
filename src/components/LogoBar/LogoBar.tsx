@@ -6,6 +6,8 @@ const LogoBar: React.FC = () => {
     'News Spark Editor',
     'Unimog Community Hub',
     'AIBoostCampaign',
+    'Pattern Scribe AI',
+    'Personal AI Manager',
     'Beyond RV'
   ];
 
