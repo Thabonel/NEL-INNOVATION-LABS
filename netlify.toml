@@ -10,7 +10,7 @@
 
 [build.environment]
   # Specify Node.js version
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
 
 # Form processing
 [forms]
