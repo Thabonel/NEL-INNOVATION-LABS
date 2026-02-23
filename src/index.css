@@ -72,6 +72,40 @@ body {
   font-weight: 400;
 }
 
+.headline-hero {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--charcoal);
+}
+
+.body-large {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.label-text {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--moss);
+}
+
+@media (max-width: 768px) {
+  .headline-hero {
+    font-size: 2.5rem;
+  }
+
+  .body-large {
+    font-size: 1.125rem;
+  }
+}
+
 /* Component Classes */
 .container {
   max-width: 1400px;
@@ -81,6 +115,24 @@ body {
 
 .section {
   padding: 8rem 0;
+}
+
+.section-spacing {
+  padding: 8rem 0;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 .card {
@@ -199,6 +251,29 @@ body {
   left: 0;
 }
 
+/* Form Elements */
+.form-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid rgba(46, 64, 54, 0.2);
+  border-radius: var(--border-radius);
+  background-color: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--moss);
+  box-shadow: 0 0 0 3px rgba(46, 64, 54, 0.1);
+}
+
+.form-input::placeholder {
+  color: rgba(46, 64, 54, 0.5);
+}
+
 /* Interactive Elements */
 .link-hover {
   transition: all 0.2s ease;
@@ -241,6 +316,17 @@ body {
 
 .border-moss { border-color: var(--moss); }
 .border-clay { border-color: var(--clay); }
+
+/* Extended Color Utilities */
+.text-text-primary { color: var(--charcoal); }
+.text-text-secondary { color: rgba(46, 64, 54, 0.7); }
+.text-accent { color: var(--clay); }
+.accent-text { color: var(--clay); }
+
+.bg-surface { background-color: rgba(242, 240, 233, 0.5); }
+.bg-secondary { background-color: rgba(46, 64, 54, 0.05); }
+
+.border-color { border-color: rgba(46, 64, 54, 0.2); }
 
 /* Custom Cursor for Interactive Areas */
 .cursor-organic {
