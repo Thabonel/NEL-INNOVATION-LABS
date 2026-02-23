@@ -18,28 +18,15 @@ const Contact: React.FC = () => {
   };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
     // Basic validation
     if (!formData.companyName || !formData.email || !formData.aiChallenge) {
+      e.preventDefault();
       alert('Please fill in all required fields.');
       return;
     }
 
-    // TODO: Implement actual form submission logic
-    console.log('Form submitted:', formData);
-
-    // Success message
-    alert('Thank you for your interest! We\'ll analyze your requirements and respond within 24 hours with next steps.');
-
-    // Reset form
-    setFormData({
-      companyName: '',
-      email: '',
-      aiChallenge: '',
-      timeline: '',
-      budget: ''
-    });
+    // Let Netlify handle the form submission
+    // The form will redirect to a success page or show Netlify's default success message
   };
 
   return (
@@ -47,7 +34,23 @@ const Contact: React.FC = () => {
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="card">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              name="contact"
+              method="POST"
+              action="/success.html"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
+              className="space-y-6"
+            >
+              {/* Hidden fields for Netlify Forms */}
+              <input type="hidden" name="form-name" value="contact" />
+              <p style={{ display: 'none' }}>
+                <label>
+                  Don't fill this out if you're human: <input name="bot-field" />
+                </label>
+              </p>
+
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="companyName" className="block font-semibold mb-2">
