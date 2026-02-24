@@ -32,15 +32,21 @@ const Contact: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      // Submit to Netlify Forms
-      const response = await fetch('/', {
+      // Submit to Netlify Forms via dedicated endpoint
+      const formPayload = new URLSearchParams({
+        'form-name': 'contact',
+        ...formData
+      });
+
+      console.log('Form submission payload:', formPayload.toString());
+
+      const response = await fetch('/contact-form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          'form-name': 'contact',
-          ...formData
-        }).toString()
+        body: formPayload.toString()
       });
+
+      console.log('Form response:', response.status, response.statusText);
 
       if (response.ok) {
         setIsSubmitted(true);
@@ -53,9 +59,11 @@ const Contact: React.FC = () => {
           budget: ''
         });
       } else {
-        alert('There was an error submitting the form. Please try again.');
+        console.error('Form submission failed:', response.status, response.statusText);
+        alert(`Form submission failed with status ${response.status}. Please try again.`);
       }
     } catch (error) {
+      console.error('Form submission error:', error);
       alert('There was an error submitting the form. Please try again.');
     } finally {
       setIsSubmitting(false);
@@ -108,6 +116,7 @@ const Contact: React.FC = () => {
             <form
               name="contact"
               method="POST"
+              action="/contact-form"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}

@@ -20,13 +20,19 @@
     subject = "New NEL Innovation Labs Inquiry - {companyName}"
 
 # Redirects and rewrites
+# Form processing (MUST come before SPA redirect)
+[[redirects]]
+  from = "/contact-form"
+  to = "/"
+  status = 200
+
 # Allow success.html to be served directly
 [[redirects]]
   from = "/success.html"
   to = "/success.html"
   status = 200
 
-# Catch-all for React single page app
+# Catch-all for React single page app (MUST be last)
 [[redirects]]
   from = "/*"
   to = "/index.html"
