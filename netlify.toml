@@ -19,6 +19,12 @@
     to = "thabonel0@gmail.com"
     subject = "New NEL Innovation Labs Inquiry - {companyName}"
 
+# Success page redirect (must come before catch-all)
+[[redirects]]
+  from = "/success"
+  to = "/success.html"
+  status = 200
+
 # SPA redirect but exclude form submissions and files from redirect
 [[redirects]]
   from = "/*"
