@@ -36,7 +36,7 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between">
         <div className="font-heading text-xl font-bold text-moss">
-          NEL Labs
+          NEL Innovation Labs
         </div>
 
         {/* Desktop Menu */}
@@ -148,7 +148,7 @@ const Hero = () => {
           </h1>
 
           <p className="hero-description text-cream/90 text-lg md:text-xl max-w-2xl mb-8 leading-relaxed">
-            We're builders, not consultants. NEL ships production-ready AI systems — from custom development to full product launches — with measurable business impact.
+            NEL Innovation Labs — Production-ready AI systems that actually ship, not demos.
           </p>
 
           <div className="hero-cta">
@@ -166,8 +166,8 @@ const Hero = () => {
 const DiagnosticShuffler = () => {
   const [cards] = useState([
     'Production-Grade Systems',
-    'Multi-Model Integration',
-    'Real-World Deployment'
+    'Multi-Model Intelligence',
+    'Enterprise-Proven Results'
   ]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const shufflerRef = useRef(null);
@@ -404,33 +404,33 @@ const Features = () => {
           {/* Feature Card 1 - Diagnostic Shuffler */}
           <div className="feature-card card cursor-organic">
             <h3 className="font-heading text-xl font-bold text-moss mb-4">
-              Production-Grade
+              Production-Grade Systems
             </h3>
             <DiagnosticShuffler />
             <p className="text-charcoal/70 text-sm mt-4">
-              Every system runs in real production environments. News Spark Editor processes broadcast news, Barry AI manages vehicle diagnostics.
+              Real AI running in live production environments, not prototypes.
             </p>
           </div>
 
           {/* Feature Card 2 - Telemetry Typewriter */}
           <div className="feature-card card cursor-organic">
             <h3 className="font-heading text-xl font-bold text-moss mb-4">
-              Multi-Model AI
+              Multi-Model Intelligence
             </h3>
             <TelemetryTypewriter />
             <p className="text-charcoal/70 text-sm mt-4">
-              We integrate the best models for each task. Two-Pass RAG with 95% accuracy, combining Whisper, Gemini, and Claude.
+              Best-in-class AI models integrated seamlessly for each specific task.
             </p>
           </div>
 
           {/* Feature Card 3 - Cursor Protocol Scheduler */}
           <div className="feature-card card cursor-organic">
             <h3 className="font-heading text-xl font-bold text-moss mb-4">
-              Enterprise-Proven
+              Enterprise-Proven Results
             </h3>
             <CursorScheduler />
             <p className="text-charcoal/70 text-sm mt-4">
-              Personal AI Manager orchestrates 6 specialized agents. Pattern Scribe AI serves enterprise fashion manufacturers.
+              Deployed systems with measurable business impact and 95% accuracy.
             </p>
           </div>
         </div>
