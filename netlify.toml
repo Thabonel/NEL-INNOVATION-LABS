@@ -20,6 +20,13 @@
     subject = "New NEL Innovation Labs Inquiry - {companyName}"
 
 # Redirects and rewrites
+# Allow success.html to be served directly
+[[redirects]]
+  from = "/success.html"
+  to = "/success.html"
+  status = 200
+
+# Catch-all for React single page app
 [[redirects]]
   from = "/*"
   to = "/index.html"
