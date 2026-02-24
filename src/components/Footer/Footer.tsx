@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           <div className="grid md:grid-cols-4 gap-12">
             {/* Logo and Contact */}
             <div className="space-y-6">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center gap-3">
                 <div className="font-bold text-xl">NEL</div>
                 <div className="bg-accent text-bg-primary px-3 py-1 rounded-full text-xs font-semibold">
                   INNOVATION LABS
