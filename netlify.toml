@@ -19,11 +19,12 @@
     to = "thabonel0@gmail.com"
     subject = "New NEL Innovation Labs Inquiry - {companyName}"
 
-# Simple SPA redirect - MUST be last and only redirect rule needed
+# SPA redirect but exclude form submissions and files from redirect
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  conditions = {Role = ["!", "none"], Method = ["!", "POST"]}
 
 # Headers
 [[headers]]
