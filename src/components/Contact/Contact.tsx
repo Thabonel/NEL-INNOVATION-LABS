@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
 
       console.log('Form submission payload:', formPayload.toString());
 
-      const response = await fetch('/contact-form', {
+      const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: formPayload.toString()
@@ -116,7 +116,7 @@ const Contact: React.FC = () => {
             <form
               name="contact"
               method="POST"
-              action="/contact-form"
+              action="/"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
