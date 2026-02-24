@@ -20,54 +20,16 @@ const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-
-    // Basic validation
+  const handleSubmit = (e: React.FormEvent) => {
+    // Basic validation before allowing natural submission
     if (!formData.companyName || !formData.email || !formData.aiChallenge) {
+      e.preventDefault();
       alert('Please fill in all required fields.');
       return;
     }
 
+    // Let the form submit naturally to Netlify - no preventDefault()
     setIsSubmitting(true);
-
-    try {
-      // Submit to Netlify Forms via dedicated endpoint
-      const formPayload = new URLSearchParams({
-        'form-name': 'contact',
-        ...formData
-      });
-
-      console.log('Form submission payload:', formPayload.toString());
-
-      const response = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: formPayload.toString()
-      });
-
-      console.log('Form response:', response.status, response.statusText);
-
-      if (response.ok) {
-        setIsSubmitted(true);
-        // Reset form
-        setFormData({
-          companyName: '',
-          email: '',
-          aiChallenge: '',
-          timeline: '',
-          budget: ''
-        });
-      } else {
-        console.error('Form submission failed:', response.status, response.statusText);
-        alert(`Form submission failed with status ${response.status}. Please try again.`);
-      }
-    } catch (error) {
-      console.error('Form submission error:', error);
-      alert('There was an error submitting the form. Please try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
   };
 
   // Success state
@@ -116,7 +78,7 @@ const Contact: React.FC = () => {
             <form
               name="contact"
               method="POST"
-              action="/"
+              action="/success"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
