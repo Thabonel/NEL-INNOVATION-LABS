@@ -9,6 +9,9 @@ const Contact: React.FC = () => {
     budget: ''
   });
 
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
@@ -17,17 +20,85 @@ const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
     // Basic validation
     if (!formData.companyName || !formData.email || !formData.aiChallenge) {
-      e.preventDefault();
       alert('Please fill in all required fields.');
       return;
     }
 
-    // Let Netlify handle the form submission
-    // The form will redirect to a success page or show Netlify's default success message
+    setIsSubmitting(true);
+
+    try {
+      // Submit to Netlify Forms
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          'form-name': 'contact',
+          ...formData
+        }).toString()
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        // Reset form
+        setFormData({
+          companyName: '',
+          email: '',
+          aiChallenge: '',
+          timeline: '',
+          budget: ''
+        });
+      } else {
+        alert('There was an error submitting the form. Please try again.');
+      }
+    } catch (error) {
+      alert('There was an error submitting the form. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
+
+  // Success state
+  if (isSubmitted) {
+    return (
+      <section id="contact-form" className="section-spacing bg-secondary">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="card text-center">
+              <div className="space-y-8">
+                <div className="w-20 h-20 mx-auto bg-accent rounded-full flex items-center justify-center">
+                  <div className="text-3xl font-bold text-bg-primary">✓</div>
+                </div>
+
+                <div>
+                  <h2 className="headline-card mb-4">Thank You!</h2>
+                  <p className="body-large text-text-secondary mb-6">
+                    Your project inquiry has been received successfully. We'll analyze your requirements and respond within
+                    <span className="text-accent"> 24 hours</span> with next steps.
+                  </p>
+                  <p className="body-base text-text-secondary">
+                    Our team will review your AI challenge and get back to you at the email address provided
+                    with a tailored approach for your project.
+                  </p>
+                </div>
+
+                <button
+                  onClick={() => setIsSubmitted(false)}
+                  className="btn-primary"
+                >
+                  Submit Another Inquiry
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="contact-form" className="section-spacing bg-secondary">
@@ -37,7 +108,6 @@ const Contact: React.FC = () => {
             <form
               name="contact"
               method="POST"
-              action="/success.html"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
@@ -64,6 +134,7 @@ const Contact: React.FC = () => {
                     onChange={handleInputChange}
                     className="form-input"
                     required
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -79,6 +150,7 @@ const Contact: React.FC = () => {
                     onChange={handleInputChange}
                     className="form-input"
                     required
+                    disabled={isSubmitting}
                   />
                 </div>
               </div>
@@ -96,6 +168,7 @@ const Contact: React.FC = () => {
                   className="form-input resize-none"
                   placeholder="e.g., We need to automate document processing for 50,000 files daily, or we want to add intelligent search to our platform..."
                   required
+                  disabled={isSubmitting}
                 />
               </div>
 
@@ -110,6 +183,7 @@ const Contact: React.FC = () => {
                     value={formData.timeline}
                     onChange={handleInputChange}
                     className="form-input"
+                    disabled={isSubmitting}
                   >
                     <option value="">Select timeline</option>
                     <option value="asap">ASAP (1-3 months)</option>
@@ -129,6 +203,7 @@ const Contact: React.FC = () => {
                     value={formData.budget}
                     onChange={handleInputChange}
                     className="form-input"
+                    disabled={isSubmitting}
                   >
                     <option value="">Select budget</option>
                     <option value="under-50k">Under $50k</option>
@@ -144,8 +219,9 @@ const Contact: React.FC = () => {
                 <button
                   type="submit"
                   className="btn-primary text-lg px-12 py-4"
+                  disabled={isSubmitting}
                 >
-                  Send Project Details
+                  {isSubmitting ? 'Sending...' : 'Send Project Details'}
                 </button>
               </div>
             </form>
