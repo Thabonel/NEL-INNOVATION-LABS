@@ -36,20 +36,6 @@ const Portfolio: React.FC = () => {
       metric: 'PAM System',
       detail: 'Supabase + RapidAPI',
       tech: ['WebSocket Streaming', 'Calendar Integration', 'Voice Detection', 'Personal AI']
-    },
-    {
-      name: 'Pattern Scribe AI',
-      description: 'Enterprise-grade AI pattern making platform',
-      metric: '100+ components',
-      detail: '47+ core libraries',
-      tech: ['3D Visualization', 'CAD Integration', 'Industrial Export', 'React + Supabase']
-    },
-    {
-      name: 'Personal AI Manager',
-      description: 'Autonomous SaaS business operations',
-      metric: '6 AI agents',
-      detail: 'Next.js + Claude API',
-      tech: ['PAM Orchestrator', 'KIM/SAM/TIM/FIN/VAL', 'Stripe Integration', 'Full Automation']
     }
   ];
 
@@ -105,7 +91,7 @@ const Portfolio: React.FC = () => {
         {/* Portfolio Stats */}
         <div className="mt-16 grid md:grid-cols-4 gap-8 text-center">
           <div className="card-simple">
-            <div className="text-2xl font-bold text-accent mb-2">8+</div>
+            <div className="text-2xl font-bold text-accent mb-2">6+</div>
             <div className="body-small text-text-secondary">Production Systems</div>
           </div>
           <div className="card-simple">
