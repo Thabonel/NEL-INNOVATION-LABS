@@ -39,17 +39,28 @@ const Contact: React.FC = () => {
     };
 
     // Submit to Netlify
+    const submitData = {
+      "form-name": "contact",
+      "companyName": formData.companyName,
+      "email": formData.email,
+      "aiChallenge": formData.aiChallenge,
+      "timeline": formData.timeline || "",
+      "budget": formData.budget || ""
+    };
+
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "contact",
-        ...formData
-      })
+      body: encode(submitData)
     })
-    .then(() => {
-      setIsSubmitted(true);
-      setIsSubmitting(false);
+    .then((response) => {
+      if (response.ok) {
+        setIsSubmitted(true);
+        setIsSubmitting(false);
+        console.log('Form submitted successfully:', submitData);
+      } else {
+        throw new Error('Form submission failed');
+      }
     })
     .catch((error) => {
       alert('Form submission failed. Please try again.');
@@ -76,8 +87,21 @@ const Contact: React.FC = () => {
                     Your project inquiry has been received successfully. We'll analyze your requirements and respond within
                     <span className="text-accent"> 24 hours</span> with next steps.
                   </p>
+
+                  {/* Show submitted details */}
+                  <div className="bg-bg-primary p-6 rounded-lg border border-border mb-6 text-left">
+                    <h3 className="text-text-primary font-semibold mb-4">Submission Details:</h3>
+                    <div className="space-y-2 text-sm">
+                      <div><span className="text-accent font-medium">Company:</span> {formData.companyName}</div>
+                      <div><span className="text-accent font-medium">Email:</span> {formData.email}</div>
+                      <div><span className="text-accent font-medium">AI Challenge:</span> {formData.aiChallenge}</div>
+                      {formData.timeline && <div><span className="text-accent font-medium">Timeline:</span> {formData.timeline}</div>}
+                      {formData.budget && <div><span className="text-accent font-medium">Budget:</span> {formData.budget}</div>}
+                    </div>
+                  </div>
+
                   <p className="body-base text-text-secondary">
-                    Our team will review your AI challenge and get back to you at the email address provided
+                    Our team will review your AI challenge and get back to you at <span className="text-accent">{formData.email}</span>
                     with a tailored approach for your project.
                   </p>
                 </div>
