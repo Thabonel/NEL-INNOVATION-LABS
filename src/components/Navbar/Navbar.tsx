@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
             <img
               src="/nel-logo-compact.png"
               alt="Nel Innovation Labs"
-              className="h-6 w-auto"
+              className="h-4 max-w-32 w-auto object-contain"
             />
           </div>
 
