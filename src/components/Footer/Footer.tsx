@@ -18,12 +18,7 @@ const Footer: React.FC = () => {
               </div>
 
               <div className="space-y-3">
-                <div className="body-small text-text-secondary">
-                  <strong>Connect</strong>
-                </div>
-                <div className="body-small text-text-secondary">
-                  hello@nelinnovationlabs.com
-                </div>
+                {/* Contact info removed - forms go to thabonel0@gmail.com */}
               </div>
             </div>
 
