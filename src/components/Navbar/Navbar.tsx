@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <img
-              src="/nel-logo-small.png"
+              src="/nel-logo-light.png"
               alt="Nel Innovation Labs"
               className="h-auto w-auto max-h-10 max-w-52 object-contain"
             />
