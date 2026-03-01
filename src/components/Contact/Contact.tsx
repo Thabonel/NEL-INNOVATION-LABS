@@ -20,16 +20,42 @@ const Contact: React.FC = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    // Basic validation before allowing natural submission
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    // Basic validation
     if (!formData.companyName || !formData.email || !formData.aiChallenge) {
-      e.preventDefault();
       alert('Please fill in all required fields.');
       return;
     }
 
-    // Let the form submit naturally to Netlify - no preventDefault()
     setIsSubmitting(true);
+
+    // Encode form data for Netlify
+    const encode = (data: Record<string, string>) => {
+      return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+    };
+
+    // Submit to Netlify
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "contact",
+        ...formData
+      })
+    })
+    .then(() => {
+      setIsSubmitted(true);
+      setIsSubmitting(false);
+    })
+    .catch((error) => {
+      alert('Form submission failed. Please try again.');
+      setIsSubmitting(false);
+      console.error('Form submission error:', error);
+    });
   };
 
   // Success state
@@ -78,7 +104,6 @@ const Contact: React.FC = () => {
             <form
               name="contact"
               method="POST"
-              action="/success"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
