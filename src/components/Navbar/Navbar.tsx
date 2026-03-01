@@ -25,8 +25,12 @@ const Navbar: React.FC = () => {
       <div className="container">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <div className="font-bold text-xl">Nel Innovation Labs</div>
+          <div className="flex items-center">
+            <img
+              src="/nel-logo-compact.png"
+              alt="Nel Innovation Labs"
+              className="h-6 w-auto"
+            />
           </div>
 
           {/* Navigation Links */}
