@@ -26,10 +26,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="font-bold text-xl">NEL</div>
-            <div className="bg-accent text-bg-primary px-3 py-1 rounded-full text-xs font-semibold">
-              INNOVATION LABS
-            </div>
+            <div className="font-bold text-xl">Nel Innovation Labs</div>
           </div>
 
           {/* Navigation Links */}
