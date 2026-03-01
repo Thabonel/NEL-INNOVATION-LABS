@@ -4,7 +4,7 @@ const ValueProps: React.FC = () => {
   const valueProps = [
     {
       title: 'Production-Grade',
-      description: 'Every system we build runs in real production environments. News Spark Editor processes broadcast news, Unimog Hub manages 60+ database tables, OpenClaw serves an active developer community.'
+      description: 'Every system we build runs in real production environments serving real users. News Spark Editor processes broadcast news, Unimog Hub manages 60+ database tables, AIBoostCampaign automates marketing workflows.'
     },
     {
       title: 'Multi-Model AI',

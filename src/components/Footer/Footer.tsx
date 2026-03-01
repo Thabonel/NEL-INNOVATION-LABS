@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
         <div className="py-8 border-t border-color">
           <div className="text-center">
             <p className="body-small text-text-secondary">
-              © 2026 NEL Innovation Labs Pty Ltd — Built in Australia, delivered globally
+              © 2026 NEL Innovation Labs Pty Ltd — Built in Australia
             </p>
           </div>
         </div>

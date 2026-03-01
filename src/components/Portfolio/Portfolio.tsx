@@ -89,22 +89,14 @@ const Portfolio: React.FC = () => {
         </div>
 
         {/* Portfolio Stats */}
-        <div className="mt-16 grid md:grid-cols-4 gap-8 text-center">
+        <div className="mt-16 grid md:grid-cols-2 gap-8 text-center">
           <div className="card-simple">
-            <div className="text-2xl font-bold text-accent mb-2">6+</div>
+            <div className="text-2xl font-bold text-accent mb-2">5</div>
             <div className="body-small text-text-secondary">Production Systems</div>
           </div>
           <div className="card-simple">
-            <div className="text-2xl font-bold text-accent mb-2">10K+</div>
-            <div className="body-small text-text-secondary">Lines of Code</div>
-          </div>
-          <div className="card-simple">
-            <div className="text-2xl font-bold text-accent mb-2">50+</div>
-            <div className="body-small text-text-secondary">AI Agents Deployed</div>
-          </div>
-          <div className="card-simple">
-            <div className="text-2xl font-bold text-accent mb-2">95%</div>
-            <div className="body-small text-text-secondary">AI Accuracy Rate</div>
+            <div className="text-2xl font-bold text-accent mb-2">60+</div>
+            <div className="body-small text-text-secondary">Database Tables (Unimog Hub)</div>
           </div>
         </div>
       </div>

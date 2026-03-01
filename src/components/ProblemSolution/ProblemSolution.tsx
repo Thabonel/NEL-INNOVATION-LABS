@@ -66,8 +66,8 @@ const ProblemSolution: React.FC = () => {
 
             <div className="card bg-accent/10 border-accent/30 mt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">94%</div>
-                <div className="body-small text-text-secondary">Success Rate</div>
+                <div className="text-3xl font-bold text-accent mb-2">5</div>
+                <div className="body-small text-text-secondary">Production Systems Shipped</div>
               </div>
             </div>
           </div>
