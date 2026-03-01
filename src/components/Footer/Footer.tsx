@@ -1,35 +1,13 @@
 import React from 'react';
 
 const Footer: React.FC = () => {
-  const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-  };
-
-  const footerLinks = {
-    'Getting Started': [
-      { name: 'Start Project', action: () => scrollToSection('contact') },
-      { name: 'Get Demo', action: () => scrollToSection('portfolio') }
-    ],
-    'Services': [
-      { name: 'Custom Development', action: () => scrollToSection('services') },
-      { name: 'AI Strategy', action: () => scrollToSection('services') },
-      { name: 'Product Development', action: () => scrollToSection('services') }
-    ],
-    'Company': [
-      { name: 'About', action: () => scrollToSection('about') },
-      { name: 'Portfolio', action: () => scrollToSection('portfolio') },
-      { name: 'Contact', action: () => scrollToSection('contact') }
-    ]
-  };
+  // Simplified footer - just logo and contact info
 
   return (
     <footer className="bg-bg-primary border-t border-color">
       <div className="container">
         <div className="py-16">
-          <div className="grid md:grid-cols-4 gap-12">
+          <div className="flex justify-center">
             {/* Logo and Contact */}
             <div className="space-y-6">
               <div className="flex items-center gap-3">
@@ -49,23 +27,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            {/* Footer Links */}
-            {Object.entries(footerLinks).map(([category, links]) => (
-              <div key={category} className="space-y-6">
-                <h4 className="font-semibold">{category}</h4>
-                <div className="space-y-3">
-                  {links.map((link, index) => (
-                    <button
-                      key={index}
-                      onClick={link.action}
-                      className="block body-small text-text-secondary hover:text-accent transition-colors text-left"
-                    >
-                      {link.name}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            ))}
+            {/* Removed footer navigation links */}
           </div>
         </div>
 

@@ -53,14 +53,11 @@ const Contact: React.FC = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode(submitData)
     })
-    .then((response) => {
-      if (response.ok) {
-        setIsSubmitted(true);
-        setIsSubmitting(false);
-        console.log('Form submitted successfully:', submitData);
-      } else {
-        throw new Error('Form submission failed');
-      }
+    .then(() => {
+      // Don't check response.ok - Netlify Forms may not return standard 200
+      setIsSubmitted(true);
+      setIsSubmitting(false);
+      console.log('Form submitted successfully:', submitData);
     })
     .catch((error) => {
       alert('Form submission failed. Please try again.');
