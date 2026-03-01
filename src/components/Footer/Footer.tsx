@@ -10,8 +10,12 @@ const Footer: React.FC = () => {
           <div className="flex justify-center">
             {/* Logo and Contact */}
             <div className="space-y-6">
-              <div className="flex items-center gap-3">
-                <div className="font-bold text-xl">Nel Innovation Labs</div>
+              <div className="flex items-center justify-center">
+                <img
+                  src="/nel-logo.png"
+                  alt="Nel Innovation Labs"
+                  className="h-10 w-auto"
+                />
               </div>
 
               <div className="space-y-3">
