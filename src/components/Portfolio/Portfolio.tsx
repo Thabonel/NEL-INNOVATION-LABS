@@ -2,40 +2,71 @@ import React from 'react';
 
 const Portfolio: React.FC = () => {
   const projects = [
+    // Production Live (3 projects)
+    {
+      name: 'Personal AI Manager (PAM)',
+      description: 'Personal AI assistant with specialized agents',
+      metric: '6 specialized agents',
+      detail: 'Next.js + Supabase',
+      tech: ['Voice Detection', 'Calendar Integration', 'Task Management', 'WebSocket Streaming']
+    },
     {
       name: 'AI Query Hub',
-      description: 'Intelligent productivity platform',
+      description: 'Document analysis and AI productivity platform',
       metric: 'Starter/Pro/Business',
       detail: 'React + Supabase + AI',
       tech: ['Document Management', 'AI Analysis', 'Task Planning', 'Team Collaboration']
     },
     {
-      name: 'News Spark Editor',
-      description: 'AI-native broadcast news production',
-      metric: 'Multi-model AI',
-      detail: 'Text-to-video pipeline',
-      tech: ['OpenAI Whisper', 'Gemini 1.5 Pro', 'Claude Opus 4.6', 'FFmpeg']
+      name: 'Wheels & Wins',
+      description: 'Vehicle enthusiast community platform',
+      metric: 'Live marketplace',
+      detail: 'Laravel + Livewire',
+      tech: ['Community Features', 'Trip Planning', 'Event Management', 'Marketplace']
+    },
+    // Production Ready (3 projects)
+    {
+      name: 'Pattern Scribe AI Magic',
+      description: 'AI-powered pattern documentation for fashion',
+      metric: 'Enterprise ready',
+      detail: 'Next.js + Supabase',
+      tech: ['PDF Generation', 'AI Pattern Analysis', 'Brand Integration', 'Export Tools']
     },
     {
-      name: 'Unimog Community Hub',
-      description: 'Vehicle enthusiast platform',
-      metric: '95% accuracy',
-      detail: '60+ database tables',
-      tech: ['Barry AI Mechanic', 'Two-Pass RAG', 'Trip Planning', 'Marketplace']
-    },
-    {
-      name: 'AIBoostCampaign',
-      description: 'Marketing automation platform',
+      name: 'AI Boost Campaign',
+      description: 'Multi-agent marketing automation platform',
       metric: '50+ Python agents',
       detail: '10,083 lines of code',
       tech: ['18 Edge Functions', 'Multi-model AI', 'Campaign Logic', 'SEO Automation']
     },
     {
-      name: 'Wheels & Wins',
-      description: 'AI assistant platform',
-      metric: 'PAM System',
-      detail: 'Supabase + RapidAPI',
-      tech: ['WebSocket Streaming', 'Calendar Integration', 'Voice Detection', 'Personal AI']
+      name: 'Unimog Community Hub',
+      description: 'Vehicle enthusiast platform with AI diagnostics',
+      metric: '95% accuracy',
+      detail: '60+ database tables',
+      tech: ['Barry AI Mechanic', 'Two-Pass RAG', 'Trip Planning', 'Marketplace']
+    },
+    // Active Development (3 projects)
+    {
+      name: 'News Spark Editor',
+      description: 'AI-native broadcast news production pipeline',
+      metric: 'Multi-model AI',
+      detail: 'Text-to-video pipeline',
+      tech: ['OpenAI Whisper', 'Gemini 1.5 Pro', 'Claude Opus 4.6', 'FFmpeg']
+    },
+    {
+      name: 'Tradie Shield',
+      description: 'Trade business management and protection platform',
+      metric: 'Active development',
+      detail: 'Laravel + Vue.js',
+      tech: ['Business Management', 'Document Handling', 'Trade Integration', 'Protection Services']
+    },
+    {
+      name: 'Video Course Platform',
+      description: 'Educational content delivery and management',
+      metric: 'Course delivery',
+      detail: 'Full-stack platform',
+      tech: ['Video Streaming', 'Progress Tracking', 'User Management', 'Content Delivery']
     }
   ];
 
@@ -91,7 +122,7 @@ const Portfolio: React.FC = () => {
         {/* Portfolio Stats */}
         <div className="mt-16 grid md:grid-cols-2 gap-8 text-center">
           <div className="card-simple">
-            <div className="text-2xl font-bold text-accent mb-2">5</div>
+            <div className="text-2xl font-bold text-accent mb-2">9</div>
             <div className="body-small text-text-secondary">Production Systems</div>
           </div>
           <div className="card-simple">
