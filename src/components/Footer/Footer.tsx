@@ -14,8 +14,18 @@ const Footer: React.FC = () => {
                 <div className="font-bold text-xl">Nel Innovation Labs</div>
               </div>
 
-              <div className="space-y-3">
-                {/* Contact info removed - forms go to thabonel0@gmail.com */}
+              <div className="space-y-3 text-center">
+                <div className="space-y-2">
+                  <a
+                    href="mailto:info@nelinnovationlabs.com"
+                    className="body-base text-text-secondary hover:text-accent transition-colors"
+                  >
+                    info@nelinnovationlabs.com
+                  </a>
+                  <div className="body-small text-text-secondary">
+                    Sydney, Australia
+                  </div>
+                </div>
               </div>
             </div>
 
