@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
             </h1>
 
             <p className="body-large text-text-secondary max-w-lg">
-              We're builders, not consultants. NEL ships production-ready AI systems — from custom development to full product launches — with measurable business impact.
+              NEL Innovation Labs is an AI development studio that builds production-ready AI systems for businesses needing measurable impact. NEL specializes in custom AI development, complex system architecture, and full-stack AI product development across Australia and internationally.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

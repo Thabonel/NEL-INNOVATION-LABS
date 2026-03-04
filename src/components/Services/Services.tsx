@@ -39,8 +39,8 @@ const Services: React.FC = () => {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="headline-section mb-8">
-            How we help you build{' '}
-            <span className="accent-text">AI that works</span>
+            What services does{' '}
+            <span className="accent-text">NEL Innovation Labs</span> offer?
           </h2>
         </div>
 

@@ -1,0 +1,31 @@
+# NEL Innovation Labs
+> AI development studio that builds production-ready AI systems for businesses needing measurable impact
+
+## About
+NEL Innovation Labs is an AI development studio that creates production-ready AI systems for businesses across Australia and internationally. The company specializes in custom AI development, complex system architecture, and full-stack AI product development, focusing on measurable business impact rather than consulting. NEL operates from Sydney, Australia and has delivered systems with demonstrated results like 95% accuracy AI diagnostics and 50+ agent orchestration platforms.
+
+## Key Pages
+- https://nelinnovationlabs.com - Homepage and company overview
+- https://nelinnovationlabs.com#services - AI development services
+- https://nelinnovationlabs.com#portfolio - Production systems portfolio
+- https://nelinnovationlabs.com#contact-form - Project inquiry form
+
+## Use Cases
+- Custom AI development for businesses needing multi-model integration and RAG systems
+- AI strategy and architecture for companies requiring complex agent orchestration
+- Full-stack AI product development for businesses launching tiered SaaS platforms
+
+## Integrations
+- Supabase (database and backend)
+- OpenAI (GPT models)
+- Claude (Anthropic models)
+- Gemini (Google models)
+- React/Next.js (frontend frameworks)
+- Laravel/Livewire (backend frameworks)
+
+## Pricing
+Custom project pricing - contact for consultation and project scoping
+
+## Contact
+- Website: https://nelinnovationlabs.com
+- Email: info@nelinnovationlabs.com

@@ -8,6 +8,7 @@ import Services from './components/Services/Services';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import SocialProof from './components/SocialProof/SocialProof';
 import Portfolio from './components/Portfolio/Portfolio';
+import FAQ from './components/FAQ/FAQ';
 import FinalCTA from './components/FinalCTA/FinalCTA';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
@@ -24,6 +25,7 @@ function App() {
       <HowItWorks />
       <SocialProof />
       <Portfolio />
+      <FAQ />
       <FinalCTA />
       <Contact />
       <Footer />
