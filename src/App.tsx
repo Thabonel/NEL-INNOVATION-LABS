@@ -43,10 +43,10 @@ function App() {
 
         <section className="proof-strip page-width" aria-label="Studio proof points">
           <span className="micro-label">Proof, not promises</span>
-          <strong>9 systems shipped</strong>
-          <strong>95% AI accuracy</strong>
-          <strong>60+ tables in production</strong>
-          <strong>Built in Australia</strong>
+          <strong>49 serverless functions</strong>
+          <strong>16 products managed</strong>
+          <strong>94 desktop Lighthouse</strong>
+          <strong>#1–2 brand search position</strong>
         </section>
 
         <section className="work-section page-width" id="work">
@@ -60,28 +60,30 @@ function App() {
 
           <article className="case-study">
             <div className="case-visual">
-              <div className="case-meta"><span>Unimog Community Hub · Barry AI</span><span>01</span></div>
-              <div className="radar-art" aria-hidden="true" />
-              <h3>A mechanic that<br />knows the fleet.</h3>
-              <div className="case-metric">95%<small>answer accuracy</small></div>
+              <img className="case-image" src="/beyond-rv-case-study.webp" alt="Beyond RV expedition camper featured on the rebuilt website" />
+              <div className="case-image-overlay" aria-hidden="true" />
+              <div className="case-meta"><span>Beyond RV · Digital platform</span><span>01</span></div>
+              <h3>Built for where<br />roads end.</h3>
+              <div className="case-metric">49<small>serverless functions</small></div>
             </div>
             <div className="case-copy">
-              <span className="micro-label">Community intelligence</span>
-              <h4>Specialist knowledge, available at the moment it matters.</h4>
-              <p>Barry AI turns a deep vehicle knowledge base into useful diagnostic guidance inside a live enthusiast platform. The system combines two-pass retrieval with the context of a production community and more than 60 connected database tables.</p>
+              <span className="micro-label">Commerce · AI · Operations</span>
+              <h4>A manufacturer’s website rebuilt as an intelligent business system.</h4>
+              <p>NEL rebuilt Beyond RV from legacy WordPress into a fast Astro platform serving customers and the business owner. The result combines a 16-product catalogue, AI customer support, lead intelligence and an admin assistant that can safely manage site content and operations.</p>
               <dl>
-                <div><dt>System</dt><dd>Two-pass RAG assistant</dd></div>
-                <div><dt>Platform</dt><dd>React + Supabase</dd></div>
-                <div><dt>Outcome</dt><dd>Fast, contextual vehicle support</dd></div>
+                <div><dt>Platform</dt><dd>Astro + React + Netlify</dd></div>
+                <div><dt>Intelligence</dt><dd>Customer chat, admin AI, owner copilot</dd></div>
+                <div><dt>Outcome</dt><dd>#1–2 brand ranking and ChatGPT discovery</dd></div>
               </dl>
+              <a className="case-link" href="https://beyondrv.com.au" target="_blank" rel="noreferrer">Visit live site <Arrow /></a>
             </div>
           </article>
 
           <div className="project-pair">
             <article className="project-card acid-card">
-              <div className="case-meta"><span>News Spark · Production AI</span><span>02</span></div>
-              <div className="grid-art" aria-hidden="true" />
-              <div className="project-card-bottom"><h3>From source<br />to broadcast.</h3><div className="card-metric">24/7<small>automated pipeline</small></div></div>
+              <div className="case-meta"><span>Unimog Community Hub · Barry AI</span><span>02</span></div>
+              <div className="radar-mini" aria-hidden="true" />
+              <div className="project-card-bottom"><h3>A mechanic that<br />knows the fleet.</h3><div className="card-metric">95%<small>answer accuracy</small></div></div>
             </article>
             <article className="project-card paper-card">
               <div className="case-meta"><span>AI Query Hub · Product platform</span><span>03</span></div>
