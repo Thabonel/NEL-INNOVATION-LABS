@@ -34,8 +34,18 @@ function App() {
           </div>
           <aside className="hero-signal" aria-label="Studio focus">
             <div>
-              <span className="micro-label">Signal / 001</span>
-              <div className="signal-orb" aria-hidden="true" />
+              <span className="micro-label">Terminal / 001</span>
+              <div className="terminal-window" aria-hidden="true">
+                <div className="terminal-bar"><span /><span /><span /></div>
+                <div className="terminal-body">
+                  <span className="term-line"><span className="term-prompt">$</span> nel status --systems</span>
+                  <span className="term-line"><span className="term-green">online</span> 5 production systems</span>
+                  <span className="term-line"><span className="term-green">online</span> 49 serverless functions</span>
+                  <span className="term-line"><span className="term-green">online</span> 95% avg. accuracy</span>
+                  <span className="term-line"><span className="term-green">online</span> 16 products managed</span>
+                  <span className="term-line term-blink">_</span>
+                </div>
+              </div>
             </div>
             <p className="signal-note"><span className="micro-label">Current focus</span><br /><br />Useful AI. Durable systems.<br />Clear commercial outcomes.</p>
           </aside>
