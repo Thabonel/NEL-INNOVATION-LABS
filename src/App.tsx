@@ -101,11 +101,11 @@ function App() {
           </article>
 
           <div className="project-pair">
-            <article className="project-card signal-card">
+            <a className="project-card signal-card" href="https://unimogcommunityhub.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
               <div className="case-meta"><span>Unimog Community Hub · Barry AI</span><span>03</span></div>
               <div className="radar-mini" aria-hidden="true" />
               <div className="project-card-bottom"><h3>A mechanic that<br />knows the fleet.</h3><div className="card-metric">95%<small>answer accuracy</small></div></div>
-            </article>
+            </a>
             <article className="project-card paper-card">
               <div className="case-meta"><span>AI Query Hub · Product platform</span><span>04</span></div>
               <div className="query-art" aria-hidden="true"><span>Ask</span><span>Find</span><span>Act</span></div>
