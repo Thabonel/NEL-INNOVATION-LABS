@@ -81,6 +81,7 @@ function App() {
 
           <article className="case-study">
             <div className="case-visual">
+              <img className="case-image" src="/tradie-shield-case-study.jpg" alt="Tradies working on a construction site — the target users of Tradie Shield" />
               <div className="case-image-overlay" aria-hidden="true" />
               <div className="case-meta"><span>Tradie Shield · AI financial guardian</span><span>02</span></div>
               <h3>AI that texts tradies<br />before budgets blow.</h3>
