@@ -79,14 +79,34 @@ function App() {
             </div>
           </article>
 
+          <article className="case-study">
+            <div className="case-visual">
+              <div className="case-image-overlay" aria-hidden="true" />
+              <div className="case-meta"><span>Tradie Shield · AI financial guardian</span><span>02</span></div>
+              <h3>AI that texts tradies<br />before budgets blow.</h3>
+              <div className="case-metric">55K<small>lines of TypeScript</small></div>
+            </div>
+            <div className="case-copy">
+              <span className="micro-label">AI · SMS · Xero Integration</span>
+              <h4>An AI that watches tradies' job costs and texts them before a budget blowout becomes a business failure.</h4>
+              <p>NEL built Tradie Shield to solve the root cause of Australia's construction insolvency crisis — invisible job-level losses. The system connects to Xero and Tradify, monitors actual vs quoted costs across every active job, and proactively texts tradies when a job is heading over budget. No app required: the entire interface is SMS.</p>
+              <dl>
+                <div><dt>Platform</dt><dd>React + Fastify + Supabase</dd></div>
+                <div><dt>Intelligence</dt><dd>OpenAI GPT-5.5, SMS intent parsing, Deal Guardian contract AI</dd></div>
+                <div><dt>Outcome</dt><dd>Real-time job health monitoring with proactive SMS alerts</dd></div>
+              </dl>
+              <a className="case-link" href="https://tradieshield.com.au" target="_blank" rel="noreferrer">Visit live site <Arrow /></a>
+            </div>
+          </article>
+
           <div className="project-pair">
-            <article className="project-card acid-card">
-              <div className="case-meta"><span>Unimog Community Hub · Barry AI</span><span>02</span></div>
+            <article className="project-card signal-card">
+              <div className="case-meta"><span>Unimog Community Hub · Barry AI</span><span>03</span></div>
               <div className="radar-mini" aria-hidden="true" />
               <div className="project-card-bottom"><h3>A mechanic that<br />knows the fleet.</h3><div className="card-metric">95%<small>answer accuracy</small></div></div>
             </article>
             <article className="project-card paper-card">
-              <div className="case-meta"><span>AI Query Hub · Product platform</span><span>03</span></div>
+              <div className="case-meta"><span>AI Query Hub · Product platform</span><span>04</span></div>
               <div className="query-art" aria-hidden="true"><span>Ask</span><span>Find</span><span>Act</span></div>
               <div className="project-card-bottom"><h3>Complex data.<br />Plain language.</h3><div className="card-arrow"><Arrow /></div></div>
             </article>
