@@ -101,22 +101,25 @@ function App() {
           </article>
 
           <div className="project-pair">
-            <a className="project-card signal-card" href="https://unimogcommunityhub.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a className="project-card signal-card" href="https://unimogcommunityhub.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#fff' }}>
+              <img className="case-image" src="/unimog-community-hub.jpg" alt="Unimog Community Hub website homepage" />
+              <div className="case-image-overlay" aria-hidden="true" />
               <div className="case-meta"><span>Unimog Community Hub · Barry AI</span><span>03</span></div>
-              <div className="radar-mini" aria-hidden="true" />
               <div className="project-card-bottom"><h3>A mechanic that<br />knows the fleet.</h3><div className="card-metric">95%<small>answer accuracy</small></div></div>
             </a>
-            <a className="project-card paper-card" href="https://aiqueryhub.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <a className="project-card paper-card" href="https://aiqueryhub.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#fff' }}>
+              <img className="case-image" src="/ai-query-hub.jpg" alt="AI Query Hub website homepage" />
+              <div className="case-image-overlay" aria-hidden="true" />
               <div className="case-meta"><span>AI Query Hub · Product platform</span><span>04</span></div>
-              <div className="query-art" aria-hidden="true"><span>Ask</span><span>Find</span><span>Act</span></div>
               <div className="project-card-bottom"><h3>Complex data.<br />Plain language.</h3><div className="card-arrow"><Arrow /></div></div>
             </a>
           </div>
 
           <div className="project-pair">
-            <a className="project-card paper-card" href="https://wheelsandwins.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: 'inherit', gridColumn: '1 / -1' }}>
+            <a className="project-card paper-card" href="https://wheelsandwins.com" target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: '#fff', gridColumn: '1 / -1' }}>
+              <img className="case-image" src="/wheels-and-wins.jpg" alt="Wheels & Wins website homepage" />
+              <div className="case-image-overlay" aria-hidden="true" />
               <div className="case-meta"><span>Wheels & Wins · Vehicle community</span><span>05</span></div>
-              <div className="grid-art" aria-hidden="true" />
               <div className="project-card-bottom"><h3>Where wheels<br />find their crew.</h3><div className="card-metric">Live<small>marketplace</small></div></div>
             </a>
           </div>
