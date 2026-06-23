@@ -56,7 +56,6 @@ h1 em,h2 em { font-weight:400; text-decoration:underline; text-decoration-thickn
 .case-image-overlay { position:absolute; inset:0; background:linear-gradient(180deg,rgba(16,35,63,.26),rgba(16,35,63,.05) 38%,rgba(8,20,38,.92)); }
 .case-meta { position:relative; z-index:2; display:flex; justify-content:space-between; font:400 10px var(--mono); text-transform:uppercase; letter-spacing:.1em; }
 .case-visual h3,.project-card h3 { position:relative; z-index:2; margin:0; font:300 clamp(48px,5vw,72px)/.92 var(--serif); letter-spacing:-.05em; }
-.radar-art { position:absolute; width:480px; height:480px; top:60px; right:-25px; border-radius:50%; background:repeating-radial-gradient(circle,transparent 0 17px,rgba(240,90,60,.62) 18px 19px),conic-gradient(from 205deg,#f05a3c,#10233f 35%,#f3efe6 36%,#10233f 60%,#f05a3c); }
 .case-metric { position:absolute; z-index:3; right:34px; bottom:32px; font:300 62px var(--serif); }
 .case-metric small,.card-metric small { display:block; margin-top:2px; font:400 9px var(--mono); text-transform:uppercase; letter-spacing:.12em; }
 .case-copy { display:flex; flex-direction:column; justify-content:center; padding:55px; }
@@ -72,11 +71,7 @@ h1 em,h2 em { font-weight:400; text-decoration:underline; text-decoration-thickn
 .signal-card { background:#f2a08d; }
 .paper-card { border:1px solid var(--line); }
 .project-card-bottom { display:flex; align-items:end; justify-content:space-between; position:relative; z-index:2; }
-.grid-art { position:absolute; width:340px; height:340px; top:80px; right:-55px; transform:rotate(15deg); background:repeating-linear-gradient(90deg,transparent 0 17px,rgba(16,35,63,.8) 18px 19px),repeating-linear-gradient(0deg,transparent 0 17px,rgba(16,35,63,.8) 18px 19px); }
-.radar-mini { position:absolute; width:350px; height:350px; top:70px; right:-45px; border-radius:50%; background:repeating-radial-gradient(circle,transparent 0 14px,rgba(16,35,63,.55) 15px 16px),conic-gradient(from 205deg,#10233f,#f2a08d 35%,#f3efe6 36%,#f2a08d 60%,#10233f); }
 .card-metric { font:300 52px var(--serif); }
-.query-art { align-self:center; display:flex; flex-direction:column; gap:8px; width:70%; transform:rotate(-4deg); }
-.query-art span { padding:14px 18px; border:1px solid var(--ink); border-radius:50%; font:300 36px var(--serif); text-align:center; }
 .card-arrow { width:56px; height:56px; display:grid; place-items:center; border-radius:50%; background:var(--ink); color:var(--signal); font-size:22px; }
 .approach-section { padding-block:110px; background:var(--ink); color:#fff; }
 .approach-grid { display:grid; grid-template-columns:1fr 1fr; gap:90px; }

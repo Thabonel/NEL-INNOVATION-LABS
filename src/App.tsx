@@ -87,7 +87,7 @@ function App() {
                 <div><dt>Outcome</dt><dd>#1–2 brand ranking and ChatGPT discovery</dd></div>
               </dl>
               <a className="case-link" href="https://beyondrv.com.au" target="_blank" rel="noreferrer">Visit live site <Arrow /></a>
-              <p className="case-summary"><strong>Key takeaway:</strong> Beyond RV moved from a slow WordPress site to a fast Astro platform with AI customer support, lead intelligence, and an admin copilot — all delivered as a single integrated system. The result was #1–2 brand search ranking and ChatGPT discoverability.</p>
+              <p className="case-summary"><strong>Key takeaway:</strong> Beyond RV moved from a legacy WordPress site to a modern Astro platform with AI customer support, lead intelligence, and an admin copilot — all delivered as a single integrated system. The result was #1–2 brand search ranking and ChatGPT discoverability.</p>
             </div>
           </article>
 
