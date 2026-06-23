@@ -24,8 +24,9 @@ function App() {
         <section className="hero page-width">
           <div className="hero-main">
             <div>
-              <p className="eyebrow">Independent AI product studio · Australia / Worldwide</p>
+              <p className="eyebrow">Independent AI product studio · Sydney, Australia / Worldwide</p>
               <h1>We build intelligence<br />into <em>real</em> business.</h1>
+              <p className="answer-block">NEL Innovation Labs is an AI development studio that designs, builds, and ships production-ready AI systems for businesses. We do not write strategy documents — we write code. Every system we deliver runs in production, serving real users with measurable business impact.</p>
             </div>
             <div className="hero-bottom">
               <p className="hero-copy">NEL designs and ships ambitious AI products for businesses that need more than a prototype. Strategy, engineering and launch, handled by one senior studio.</p>
@@ -86,6 +87,7 @@ function App() {
                 <div><dt>Outcome</dt><dd>#1–2 brand ranking and ChatGPT discovery</dd></div>
               </dl>
               <a className="case-link" href="https://beyondrv.com.au" target="_blank" rel="noreferrer">Visit live site <Arrow /></a>
+              <p className="case-summary"><strong>Key takeaway:</strong> Beyond RV moved from a slow WordPress site to a fast Astro platform with AI customer support, lead intelligence, and an admin copilot — all delivered as a single integrated system. The result was #1–2 brand search ranking and ChatGPT discoverability.</p>
             </div>
           </article>
 
@@ -107,6 +109,7 @@ function App() {
                 <div><dt>Outcome</dt><dd>Real-time job health monitoring with proactive SMS alerts</dd></div>
               </dl>
               <a className="case-link" href="https://tradieshield.com.au" target="_blank" rel="noreferrer">Visit live site <Arrow /></a>
+              <p className="case-summary"><strong>Key takeaway:</strong> Tradie Shield is an SMS-first AI platform that monitors construction job costs in real time and alerts tradies before budget blowouts. The system connects to Xero and Tradify, uses OpenAI for natural-language intent parsing, and requires zero training — tradies interact entirely by text message.</p>
             </div>
           </article>
 
@@ -162,6 +165,49 @@ function App() {
           </div>
         </section>
 
+        <section className="faq-section page-width" id="faq">
+          <div className="section-heading">
+            <span className="micro-label">Common questions / 006</span>
+            <div>
+              <h2>Questions about<br />working with NEL.</h2>
+              <p>Straight answers about who we work with, how we build, and what it costs.</p>
+            </div>
+          </div>
+          <div className="faq-grid">
+            <article className="faq-item">
+              <h3>What does NEL Innovation Labs actually build?</h3>
+              <p>We build production AI systems — not prototypes, not proofs of concept. Recent examples include an AI financial guardian that monitors construction job costs via SMS (Tradie Shield), a full-stack AI product platform (AI Query Hub), and an intelligent e-commerce system for an expedition vehicle manufacturer (Beyond RV). Every system we deliver runs in production serving real users.</p>
+            </article>
+            <article className="faq-item">
+              <h3>Who does NEL work with?</h3>
+              <p>We work with businesses, startups, and enterprises that need custom AI development, complex system architecture, or full-stack AI product development. Our clients are typically in media, automotive, construction, fashion, education, or marketing. We are based in Sydney, Australia and serve clients both locally and internationally.</p>
+            </article>
+            <article className="faq-item">
+              <h3>How is NEL different from an AI consultant or agency?</h3>
+              <p>We do not write strategy documents and hand them over. NEL is a development studio — we design, code, deploy, and support the systems ourselves. The difference is simple: consultants deliver slides. We deliver working software in production with measurable outcomes.</p>
+            </article>
+            <article className="faq-item">
+              <h3>How much does a project typically cost?</h3>
+              <p>Every project is scoped individually. Pricing depends on complexity, timeline, and technical requirements. We provide a fixed-price proposal after an initial consultation. Typical engagements range from $50k to $250k+. Contact us for a project-specific quote.</p>
+            </article>
+            <article className="faq-item">
+              <h3>What technologies does NEL use?</h3>
+              <p>We select the best technology for each project. Our stack typically includes React, TypeScript, Fastify or Node.js, Supabase (PostgreSQL), OpenAI GPT, Twilio, Vite, and Tailwind CSS. We deploy on Netlify, Render, and Vercel. We do not lock clients into a single technology — each system is architected for its specific requirements.</p>
+            </article>
+            <article className="faq-item">
+              <h3>How long does a project take?</h3>
+              <p>Timelines vary by scope. A specialised AI agent can take 4–8 weeks. A full-stack product platform typically runs 12–20 weeks. We provide a detailed timeline during project scoping and work in regular milestone cycles with visible progress.</p>
+            </article>
+            <article className="faq-item">
+              <h3>Do you work with clients outside Australia?</h3>
+              <p>Yes. While we are based in Sydney, Australia, we work with clients globally. Our standard engagement model works fully remotely with regular video check-ins, shared dashboards, and milestone deliveries.</p>
+            </article>
+            <article className="faq-item">
+              <h3>What happens after the project is delivered?</h3>
+              <p>Deployment is not the finish line. We provide a post-launch support period, handover documentation, and ongoing maintenance options. Every system is built to be operated by your team, with appropriate monitoring and support in place.</p>
+            </article>
+          </div>
+        </section>
         <Contact />
       </main>
 
